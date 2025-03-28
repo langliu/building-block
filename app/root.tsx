@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react'
 import {
   isRouteErrorResponse,
   Links,
@@ -6,30 +7,30 @@ import {
   Scripts,
   ScrollRestoration,
 } from 'react-router'
-
 import type { Route } from './+types/root'
+
 import './app.css'
 
 export const links: Route.LinksFunction = () => [
-  { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+  { href: 'https://fonts.googleapis.com', rel: 'preconnect' },
   {
-    href: 'https://fonts.gstatic.com',
     crossOrigin: 'anonymous',
+    href: 'https://fonts.gstatic.com',
     rel: 'preconnect',
   },
   {
-    rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap',
+    rel: 'stylesheet',
   },
 ]
 
-export function Layout({ children }: { children: React.ReactNode }) {
+export function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang='zh'>
       <head>
         <title>积木</title>
         <meta charSet='utf-8' />
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta content='width=device-width, initial-scale=1' name='viewport' />
         <Meta />
         <Links />
       </head>

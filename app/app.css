@@ -7,19 +7,8 @@
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
-}
-
-p {
-  transition: opacity 1s ease;
-  border: 1px solid black;
-  pointer-events: none;
-  color: black;
-  margin: 8px;
-  display: block;
-  --custom: 100;
+  /* @apply bg-white dark:bg-gray-950; */
+  /* @media (prefers-color-scheme: dark) {
+    color-scheme: light;
+  } */
 }

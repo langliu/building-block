@@ -1,12 +1,12 @@
-import { Welcome } from '~/welcome/welcome'
+import { LowCodeEditor } from '~/editor'
 
 export function meta() {
   return [
     { title: '首页' },
-    { name: 'description', content: 'Welcome to React Router!' },
+    { content: 'Welcome to React Router!', name: 'description' },
   ]
 }
 
 export default function Home() {
-  return <Welcome />
+  return <LowCodeEditor />
 }
