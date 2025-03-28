@@ -1,18 +1,20 @@
+import { useMemo } from 'react'
+import { MaterialItem } from '~/editor/components/material-item'
+import { useComponentConfigStore } from '~/editor/stores/component-config'
+
 export function Material() {
+  const { componentConfig } = useComponentConfigStore()
+
+  const components = useMemo(() => {
+    return Object.values(componentConfig)
+  }, [componentConfig])
+
   return (
-    <div className='h-[100vh] flex flex-col'>
-      <div className='h-[60px] flex items-center border-b-[1px] border-[#000]'>
-        Header
-      </div>
-      <div className='flex flex-col'>
-        <div className='h-[60px] flex items-center border-b-[1px] border-[#000]'>
-          Material
-        </div>
-        <div className='flex-1'>EditArea</div>
-        <div className='h-[60px] flex items-center border-b-[1px] border-[#000]'>
-          Setting
-        </div>
-      </div>
+    <div>
+      {components.map((item, index) => {
+        const key = item.name + index
+        return <MaterialItem key={key} name={item.name} />
+      })}
     </div>
   )
 }
