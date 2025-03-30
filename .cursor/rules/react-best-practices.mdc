@@ -1,0 +1,12 @@
+---
+description: 
+globs: *.tsx,*.jsx,*.ts
+alwaysApply: false
+---
+
+# Your rule content
+
+- Use functional components with hooks
+- Implement proper state management
+- Optimize performance with memoization
+- Use context API for global state

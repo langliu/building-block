@@ -1,0 +1,11 @@
+---
+description: 
+globs: *.ts,*.tsx,*.js,*.jsx
+alwaysApply: false
+---
+Best practices for Zustand state management
+
+- Use the `create` function to define stores
+- Implement middleware for devtools and persistence
+- Use shallow comparison for performance optimization
+- Keep stores focused and modular

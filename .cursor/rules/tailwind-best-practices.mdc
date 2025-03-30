@@ -1,0 +1,13 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# 使用 Tailwind CSS 的最佳实践
+
+- 使用实用优先的方法实现一致且可维护的风格
+- 利用 Tailwind 的响应式实用程序实现移动优先设计
+- 利用自定义主题并扩展 Tailwind 的默认配置
+- 实施 JIT（即时）模式以优化构建
+- 使用 `@apply` 指令创建特定于组件的类
+- 确保正确使用 Tailwind 的伪类变体（例如，悬停、焦点）
